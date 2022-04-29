@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->increments("id");
             $table->string("from_msg");
             $table->string("to_msg");
+            $table->string("admin");
             $table->text("message");
             $table->timestamps();
         });

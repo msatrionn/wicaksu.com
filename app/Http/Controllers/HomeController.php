@@ -62,6 +62,7 @@ class HomeController extends Controller
             $save_message = new Messages();
             $save_message->from_msg = $user;
             $save_message->to_msg = $id_user;
+            $save_message->admin = 1;
             $save_message->message = $message;
             $save_message->save();
         }
